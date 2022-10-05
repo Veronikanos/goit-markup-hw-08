@@ -1,6 +1,11 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+
+	@media screen and (min-width: 480px){
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 .projects-card {
@@ -23,7 +28,8 @@
 }
 
 .overlay-text {
-  display: flex;
+  // display: flex;
+	// align-items: center;
   position: absolute;
   top: 0;
   padding: 0 24px;
@@ -38,7 +44,11 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  align-items: center;
+
+	@media screen and (min-width: 480px){
+		display: flex;
+		align-items: center;
+	}
 
   .projects-card__link:hover &,
   .projects-card__link:focus & {

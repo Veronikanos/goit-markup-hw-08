@@ -1,7 +1,12 @@
 .gallery-buttons {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+
+	@media screen and (min-width: 480px){
+		display: flex;
+		justify-content: center;
+	}
 }
 
 .gallery__title {
