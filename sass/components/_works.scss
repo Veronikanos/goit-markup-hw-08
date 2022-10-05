@@ -1,0 +1,32 @@
+.works {
+  padding-top: 0;
+}
+
+.works__list {
+  display: flex;
+}
+
+.works__item {
+  position: relative;
+  width: 370px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works__picture {
+  width: inherit;
+}
+
+.works__desc {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $overlay-color;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white-color;
+}

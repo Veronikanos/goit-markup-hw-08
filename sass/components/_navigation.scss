@@ -1,0 +1,77 @@
+.logo__highlight,
+.nav__link--active {
+  color: $highlighted-color;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  margin-left: 93px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav__link,
+.nav-contacts {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: inline-flex;
+  align-items: center;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $highlighted-color;
+  }
+}
+
+.nav__item {
+  @include transition(color);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav__list--right {
+  margin-left: auto;
+}
+
+.nav__link::after,
+.nav__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  background-color: $highlighted-color;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 4px;
+  opacity: 0;
+  @include transition(opacity);
+}
+
+.nav__link:hover::after,
+.nav__link--active::after {
+  opacity: 1;
+}
+
+.nav-contacts,
+.team__user-position {
+  color: $secondary-color;
+}
+
+.nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: $highlighted-color;
+  }
+}

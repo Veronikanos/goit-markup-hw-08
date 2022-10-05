@@ -1,0 +1,25 @@
+.social {
+  display: inline-flex;
+  width: 206px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.social__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $icon-color;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $highlighted-color;
+    fill: $white-color;
+  }
+}
