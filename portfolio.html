@@ -37,7 +37,7 @@
 				<li class="nav__item">
 					<a class="nav-contacts" href="mailto:info@devstudio.com">
 						<svg class="nav__icon" width="16px" height="12px">
-							<use href="./images/symbol-defs.svg#icon-envelope"></use>
+							<use href="./img/symbol-defs.svg#icon-envelope"></use>
 						</svg>
 						<span>info@devstudio.com</span>
 					</a>
@@ -45,7 +45,7 @@
 				<li class="nav__item">
 					<a class="nav-contacts" href="tel:+380961111111">
 						<svg class="nav__icon" width="10px" height="16px">
-							<use href="./images/symbol-defs.svg#icon-phone"></use>
+							<use href="./img/symbol-defs.svg#icon-phone"></use>
 						</svg>
 						<span>+38 096 111 11 11</span>
 					</a>
@@ -68,7 +68,15 @@
 					<li class="projects-card">
 						<a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/technokryak.jpg" alt="веб-сайт Технокряк на екрані ноутбука" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370.jpg 1x, ./img/portfolio/img-740.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354.jpg 1x, ./img/portfolio/img-708.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450.jpg 1x, ./img/portfolio/img-900.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370.jpg" alt="Технокряк">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -83,7 +91,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/basketball_poster.jpg" alt="баскетболісти постер" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-1.jpg 1x, ./img/portfolio/img-740-1.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-1.jpg 1x, ./img/portfolio/img-708-1.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-1.jpg 1x, ./img/portfolio/img-900-1.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-1.jpg" alt="Дизайн">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -96,7 +112,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/the_seafood_app.jpg" alt="логотип ресторану сіфуд" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-2.jpg 1x, ./img/portfolio/img-740-2.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-2.jpg 1x, ./img/portfolio/img-708-2.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-2.jpg 1x, ./img/portfolio/img-900-2.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-2.jpg" alt="Ресторан Seafood">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -109,7 +133,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/prime_marketing.jpg" alt="навушники" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-3.jpg 1x, ./img/portfolio/img-740-3.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-3.jpg 1x, ./img/portfolio/img-708-3.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-3.jpg 1x, ./img/portfolio/img-900-3.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-3.jpg" alt="Проєкт Prime">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -122,7 +154,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/boxes_app.jpg" alt="коробки" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-4.jpg 1x, ./img/portfolio/img-740-4.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-4.jpg 1x, ./img/portfolio/img-708-4.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-4.jpg 1x, ./img/portfolio/img-900-4.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-4.jpg" alt="Проєкт Boxes">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -135,7 +175,16 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/inspiration_website.jpg" alt="веб-сайт на моніторі" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-5.jpg 1x, ./img/portfolio/img-740-5.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-5.jpg 1x, ./img/portfolio/img-708-5.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-5.jpg 1x, ./img/portfolio/img-900-5.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-5.jpg"
+										alt="Inspiration has no Borders">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -148,7 +197,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/limited_edition_work.jpg" alt="видання лімітед едішен" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-6.jpg 1x, ./img/portfolio/img-740-6.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-6.jpg 1x, ./img/portfolio/img-708-6.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-6.jpg 1x, ./img/portfolio/img-900-6.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-6.jpg" alt="Видання Limited Edition">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -161,7 +218,15 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/lab_project.jpg" alt="бірка з логотипом проекту лаб" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-7.jpg 1x, ./img/portfolio/img-740-7.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-7.jpg 1x, ./img/portfolio/img-708-7.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-7.jpg 1x, ./img/portfolio/img-900-7.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-7.jpg" alt="Проєкт LAB">
+								</picture>
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -174,7 +239,16 @@
 					</li>
 					<li class="projects-card"><a class="projects-card__link" href="">
 							<div class="overlay-card">
-								<img src="./images/growing_business_app.jpg" alt="друк на клавіатурі ноутбука" width="370">
+								<picture>
+									<source media="(min-width: 1200px)"
+										srcset="./img/portfolio/img-370-8.jpg 1x, ./img/portfolio/img-740-8.jpg 2x" type="image/jpg">
+									<source media="(min-width: 768px)"
+										srcset="./img/portfolio/img-354-8.jpg 1x, ./img/portfolio/img-708-8.jpg 2x" type="image/jpg">
+									<source media="(max-width: 767px)"
+										srcset="./img/portfolio/img-450-8.jpg 1x, ./img/portfolio/img-900-8.jpg 2x" type="image/jpg">
+									<img class="portfolio-cards__img" src="./img/portfolio/img-370-8.jpg" alt="Growing Business">
+								</picture>
+
 								<p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
 									Все це дозволить
 									відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
@@ -209,28 +283,28 @@
 					<li>
 						<a href="" class="social__icon social__icon--gray-bg">
 							<svg width="20" height="20">
-								<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								<use href="./img/symbol-defs.svg#icon-instagram"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" class="social__icon social__icon--gray-bg">
 							<svg width="20" height="20">
-								<use href="./images/symbol-defs.svg#icon-twitter"></use>
+								<use href="./img/symbol-defs.svg#icon-twitter"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" class="social__icon social__icon--gray-bg">
 							<svg width="20" height="20">
-								<use href="./images/symbol-defs.svg#icon-facebook"></use>
+								<use href="./img/symbol-defs.svg#icon-facebook"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="" class="social__icon social__icon--gray-bg">
 							<svg width="20" height="20">
-								<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+								<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 					</li>
@@ -244,7 +318,7 @@
 					<button class="button subscribe__button" type="submit">
 						<span>Підписатися</span>
 						<svg width="24" height="24">
-							<use href="./images/symbol-defs.svg#icon-send"></use>
+							<use href="./img/symbol-defs.svg#icon-send"></use>
 						</svg></button>
 				</form>
 			</div>

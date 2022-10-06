@@ -7,14 +7,77 @@
   align-items: center;
   background-color: $header-background-color;
   background-image: linear-gradient(
-      to left,
+      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero_bg.jpg);
+    url('./../img/hero/img_lg-@1x.jpg');
+
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ),
+  //   url('./../img/hero/img_lg-@1x.jpg');
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('./../img/hero/img_lg-@2x.jpg');
+  }
+
+  @media screen and (max-width: 1199px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('./../img/hero/img_md-@1x.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 118px 0;
+    height: 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('./../img/hero/img_md-@2x.jpg');
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('./../img/hero/img_sm-@1x.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url('./../img/hero/img_sm-@2x.jpg');
+    }
+  }
 }
 
 .hero__container {
