@@ -18,21 +18,55 @@
 <body>
 
 	<header class="header-top">
+
+		<div class="menu-container_mobile js-menu-container">
+			<ul class="header-mobile__list">
+				<li class="header-mobile__list-item"><a class="header-mobile__list-link current-mobile"
+						href="index.html">Студія</a></li>
+				<li class="header-mobile__list-item"><a class="header-mobile__list-link" href="portfolio.html">Портфоліо</a>
+				</li>
+				<li class="header-mobile__list-item"><a class="header-mobile__list-link">Контакти</a></li>
+			</ul>
+			<ul class="header-mobile__contacts">
+				<li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">+38 096 111 11 11</a>
+				</li>
+				<li class="header-mobile__contacts-item"><a class="header-mobile__contacts-link" href="">info@devstudio.com</a>
+				</li>
+			</ul>
+			<ul class="header-mobile__social">
+				<li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Instagram</a></li>
+				<li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Twitter</a></li>
+				<li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">Facebook</a></li>
+				<li class="header-mobile__social-item"><a class="header-mobile__social-link" href="">LinkedIn</a></li>
+			</ul>
+			<button type="button" class="mobile-menu--btn js-close-menu" data-menu-button aria-expanded="false"
+				aria-controls="menu-container">
+				<svg width="40px" height="40px" aria-label="Вмикач мобільного меню">
+					<use class="mobile-menu--close" href="./img/symbol-defs.svg#icon-close_nav"></use>
+				</svg>
+			</button>
+		</div>
+
 		<div class="container--centered container--mobile">
-			<nav class="nav ">
+			<nav class="nav">
 				<a href="" class="logo">
 					<span class="logo__highlight">Web</span>Studio
 				</a>
 
-				<button type="button" class="mobile-menu" data-menu-button aria-expanded="false" aria-controls="menu-container">
+				<button type="button" class="mobile-menu js-open-menu" data-menu-button aria-expanded="false"
+					aria-controls="menu-container">
 					<svg width="40px" height="40px" aria-label="Вмикач мобільного меню">
-						<use class="mobile-menu--open" href="./img/symbol-defs.svg#icon-menu_nav"></use>
-						<use class="mobile-menu--close" href="./img/symbol-defs.svg#icon-close_nav"></use>
+						<use class="mobile-menu--open " href="./img/symbol-defs.svg#icon-menu_nav"></use>
+					</svg>
 					</svg>
 				</button>
+
+
+
+
 				<div class="menu-container" id="menu-container" data-menu>
 
-					<ul class="nav__list">
+					<ul class="nav__list nav__list--left">
 						<li class="nav__item">
 							<a class="nav__link nav__link--active" href="">Студія</a>
 						</li>
@@ -45,27 +79,28 @@
 					</ul>
 
 
-					<ul class="nav__list nav__list--right">
-						<li class="nav__item">
-							<a class="nav-contacts" href="mailto:info@devstudio.com">
-								<svg class="nav__icon" width="16px" height="12px">
-									<use href="./img/symbol-defs.svg#icon-envelope"></use>
-								</svg>
-								<span>info@devstudio.com</span>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav-contacts" href="tel:+380961111111">
-								<svg class="nav__icon" width="10px" height="16px">
-									<use href="./img/symbol-defs.svg#icon-phone"></use>
-								</svg>
-								<span>+38 096 111 11 11</span>
-							</a>
-						</li>
-					</ul>
+
 
 				</div>
 			</nav>
+			<ul class="nav__list nav__list--right header-contacts">
+				<li class="nav__item">
+					<a class="nav-contacts" href="mailto:info@devstudio.com">
+						<svg class="nav__icon" width="16px" height="12px">
+							<use href="./img/symbol-defs.svg#icon-envelope"></use>
+						</svg>
+						<span>info@devstudio.com</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav-contacts" href="tel:+380961111111">
+						<svg class="nav__icon" width="10px" height="16px">
+							<use href="./img/symbol-defs.svg#icon-phone"></use>
+						</svg>
+						<span>+38 096 111 11 11</span>
+					</a>
+				</li>
+			</ul>
 		</div>
 	</header>
 	<main>
