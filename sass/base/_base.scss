@@ -108,9 +108,17 @@ address {
 }
 
 .header--position {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .header-text--margin {
   margin-bottom: 20px;
+}
+
+.logo__highlight {
+  color: $highlighted-color;
 }
