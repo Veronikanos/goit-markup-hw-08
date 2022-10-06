@@ -3,10 +3,9 @@
 }
 
 .container--centered {
-  // display: flex;
-  // align-items: center;
+  padding: 0 15px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -25,4 +24,21 @@
     font-size: 26px;
     line-height: 1.2;
   }
+}
+
+// .burger-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.mobile-menu--close {
+  display: none;
+}
+
+.mobile-menu.is-open .mobile-menu--close {
+  display: block;
+}
+
+.mobile-menu.is-open .mobile-menu--open {
+  display: none;
 }
