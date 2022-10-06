@@ -66,6 +66,8 @@
 .menu-container_mobile.is-open {
   transform: translateX(0);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-mobile {
@@ -95,7 +97,7 @@
     height: 18px;
     &:hover,
     &:focus {
-      fill: var(black);
+      fill: $highlighted-color;
     }
   }
 }
@@ -112,7 +114,7 @@
     line-height: 1.17;
     &:hover,
     &:focus {
-      color: var(black);
+      color: $highlighted-color;
     }
   }
 }
@@ -154,7 +156,7 @@
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .header-mobile__social-link {
-    color: var(black);
+    color: $highlighted-color;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;

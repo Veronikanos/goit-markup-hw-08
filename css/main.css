@@ -189,6 +189,8 @@ address {
 .menu-container_mobile.is-open {
   transform: translateX(0);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-mobile {
@@ -217,7 +219,7 @@ address {
   height: 18px;
 }
 .header-mobile .header-mobile__icon-close:hover, .header-mobile .header-mobile__icon-close:focus {
-  fill: var(black);
+  fill: #2196f3;
 }
 
 .header-mobile__list {
@@ -232,7 +234,7 @@ address {
   line-height: 1.17;
 }
 .header-mobile__list .header-mobile__list-link:hover, .header-mobile__list .header-mobile__list-link:focus {
-  color: var(black);
+  color: #2196f3;
 }
 
 .header-mobile__contacts {
@@ -269,7 +271,7 @@ address {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .header-mobile__social-item .header-mobile__social-link {
-  color: var(black);
+  color: #2196f3;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -550,25 +552,29 @@ address {
 }
 
 .modal {
-  position: relative;
   max-width: 450px;
+  height: 609px;
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  margin: 93px 15px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transition-duration) var(--timing-function);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
-    height: 609px;
-    width: 528px;
+    min-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 609px;
   }
 }
 
