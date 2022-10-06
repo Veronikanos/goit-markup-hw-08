@@ -189,9 +189,6 @@ address {
 .menu-container {
   background-color: #ffffff;
   display: flex;
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -199,6 +196,7 @@ address {
     position: absolute;
     top: 100%;
     left: 0;
+    position: relative;
     height: 100vw;
   }
   .menu-container.is-open {
